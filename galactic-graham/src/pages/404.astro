@@ -1,0 +1,22 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Tarjeta from '../components/Tarjeta.astro';
+import Nav from '../components/nav.astro';
+interface Props {
+    error: unknown
+}
+
+const { error } = Astro.props
+---
+
+<Layout title="Welcome to Astro.">
+	<main>
+		<div>
+			<Nav/>
+		</div>
+		<div class="flex justify-center text-red-600 bg-white">{error instanceof Error ? error.message : 'Unknown error'}</div>
+		<Tarjeta/>
+
+		</ul>
+	</main>
+</Layout>

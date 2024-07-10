@@ -1,0 +1,40 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Tarjeta from '../components/Tarjeta.astro';
+import Nav from '../components/nav.astro';
+import Button from '../components/button/button.astro';
+import Hamburguermenu from '../components/hamburguermenu.astro';
+---
+
+<Layout title="Bienvenido a ajustes.">
+	<main>
+		<div>
+			<div>
+				<Hamburguermenu/>
+			</div>
+			<div class="sm md">
+				<Nav/>
+			</div>
+			
+		</div>
+		<div class="flex justify-center px-3 py-3 gap-4">
+			<Button
+				title='Presionar'
+			/>
+			<Button
+				title='Iniciar'
+			/>
+			<Button
+				title='ir'
+			/>
+
+		</div>
+		
+		<Tarjeta/>
+
+	</main>
+
+	<style>
+
+	</style>
+</Layout>

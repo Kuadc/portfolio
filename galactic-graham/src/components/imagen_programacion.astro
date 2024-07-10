@@ -1,0 +1,10 @@
+---
+import { Image } from 'astro:assets';
+import myImage from '../assets/pro.jpg'; // Image is 1600x900
+---
+
+<Image 
+        src={myImage} alt="A description of my image." 
+        alt="descriptive text"
+        class="h-48 w-full object-cover md:h-full md:w-48"
+/>
